@@ -1,0 +1,280 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: gray;
+}
+
+
+.signup1 {
+    background-image: url("./assets/l10.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    margin: auto;
+}
+
+.highlight {
+    background-image: url("../public/tryy.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 65%;
+    padding-bottom: 50px;
+    min-height: 100px;
+
+}
+
+/* .profile {
+    background-image: url("../public/l8.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+} */
+
+.pay {
+    background-image: url("../public/tryy.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 65%;
+    padding-bottom: 50px;
+    min-height: 150px;
+}
+
+/* .login {
+    background-image: url("./assets/l3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+} */
+
+.login-form {
+    background-color: rgb(228, 228, 228);
+}
+
+.signup input,
+.login-form input,
+.forgot-form input {
+    border: 1px solid lightgray;
+    border-radius: 7px;
+    padding: 6px;
+}
+
+.login-title {
+    color: rgb(107, 80, 44);
+}
+
+.user-data input {
+    padding: 10px;
+
+    background-color: rgb(232, 231, 231);
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    width: 200px;
+    margin: 10px;
+}
+
+.user-data label {
+    font-size: larger;
+    margin: 10px;
+}
+
+
+
+
+.signup-container {
+
+    padding-left: 40px;
+
+    margin-right: 70px;
+    box-shadow: -6px 4px 1px 0px #d9ddd9;
+    background-color: rgb(219, 216, 216);
+}
+
+.login-button {
+    background-color: rgb(199, 183, 138);
+}
+
+.places-top {
+    background-image: url("./assets/place1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+}
+
+.places-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.place-card {
+    max-width: 300px;
+}
+
+@media(max-width:690px) {
+    .places-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* .sidebar-buttons a {
+     border: 1px solid gray;
+
+    text-align: center;
+    font-weight: bold;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+}
+
+.sidebar-buttons a:hover {
+    background-color: lightgray;
+}
+
+.sidebar-buttons {
+    margin-bottom: 40px;
+    margin-top: 10px;
+} */
+
+.city-home {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-position: 10%;
+    min-height: 60vh;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+}
+
+.activity {
+    background: url("../public/tryy.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 85%;
+    padding-bottom: 50px;
+
+
+}
+
+
+
+
+@media(max-width:600px) {
+    /* .sidebar-buttons {
+        width: 100px;
+    } */
+
+    .city-home {
+        max-height: 40vh;
+    }
+
+    .sidebar-buttons {
+        flex-wrap: wrap;
+    }
+}
+
+/* .hightlight-card {
+    width: 400px;
+} */
+
+@media(max-width:620px) {
+    .sidebar-buttons a {
+        width: 100%;
+    }
+
+    /* .hightlight-card {
+        width: 200px;
+
+    } */
+
+    .highlight-card-images img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.hightlights-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.activity-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+}
+
+.highlights-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.highlight-card {
+    margin: 0.5rem;
+}
+
+.highlight-card:nth-child(2n) {
+
+    /* Adjust as needed */
+}
+
+.main-trips {
+    margin: 0;
+    padding: 0;
+}
+
+.checknow {
+    background-color: rgb(88, 109, 89);
+}
+
+.checknoww {
+    color: rgb(88, 112, 91);
+}
+
+/* .singlee {
+    background-image: url(".././public/f1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+.checknowww {
+
+    background-color: rgb(102, 121, 102);
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.trips-title {
+    background-image: url("../public/mapp.png"
+
+        );
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+}

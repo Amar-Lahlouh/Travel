@@ -1,0 +1,60 @@
+.landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  max-height: 90vh;
+}
+
+.f1-image img,
+.f2-image img {
+  /* width: 90%; */
+  width: 300px;
+  height: 300px;
+  /* height: auto; */
+  transform: rotate(10deg);
+  /* Rotate the image by 120 degrees */
+}
+
+.f2-image img {
+  /* width: 90%;
+  
+    height: 90%; */
+  /* height: auto; */
+  width: 300px;
+  height: 300px;
+  transform: rotate(-9deg);
+}
+
+@media(max-width:900px) {
+
+  .f2-image img,
+  .f1-image img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .landing {
+    gap: 30px;
+  }
+
+  .landing h2 {
+    font-size: 30px;
+  }
+}
+
+@media(max-width:750px) {
+
+  .f2-image img,
+  .f1-image img {
+    display: none;
+  }
+
+}
+
+.shadow-layer::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.9) 30%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.7) 70%, rgba(0, 0, 0, 0.6) 80%, rgba(0, 0, 0, 0.5) 90%, rgba(0, 0, 0, 0.4) 100%);
+}

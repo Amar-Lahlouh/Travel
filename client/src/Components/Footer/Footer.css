@@ -1,0 +1,16 @@
+.footer {
+    min-height: 60vh;
+    background-image: url("../../assets/footer2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer-data {
+    padding-top: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.ft {
+    border: 1px solid white;
+}

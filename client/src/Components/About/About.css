@@ -1,0 +1,40 @@
+.about-images {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-images img {
+    position: relative;
+}
+
+.about-images .about-img1 img {
+    margin-left: 50px;
+}
+
+.about-images .about-img1 img::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: green;
+    position: absolute;
+    top: 20px;
+    left: -30px;
+    z-index: -1;
+}
+
+/* .about-text {
+    background-image: url("../../assets/green2.png");
+    background-repeat: no-repeat;
+    color: rgb(39, 36, 36);
+    background-size: cover;
+    padding: 30px;
+    text-align: justify;
+
+} */
+
+@media(max-width:756px) {
+    .about {
+        flex-wrap: wrap;
+    }
+}
